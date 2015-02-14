@@ -1,7 +1,9 @@
 # mini6410_Samsung
+
 How to install and build linux on local machine to make use of existing mini6410 module drivers
 
 1) First download two packages...
+    
     a) Toolchain to cross compile for the Mini6410 - arm-linux-gcc-4.5.1-v6-vfp-20101103.tgz
     b) Linux Kernel - linux-2.6.38-20110718.tar.gz
     
