@@ -4,13 +4,13 @@ How to install and build linux on local machine to make use of existing mini6410
 1) First download two packages...
     a) Toolchain to cross compile for the Mini6410 - arm-linux-gcc-4.5.1-v6-vfp-20101103.tgz
     b) Linux Kernel - linux-2.6.38-20110718.tar.gz
-
+    
     To download above packages,
     Please go to FriendlyARM's FTP site: ftp://162.251.81.100/ to download all the materials
     Username: downloaduser
     password: 12345
-
-    Or you can get both these packages from SD card which come along with your Samsung mini6410 board. So simply copy        those files into your ubuntu machine.
+    
+    Or you can get both these packages from SD card which come along with your Samsung mini6410 board. So simply copy      those files into your ubuntu machine.
     
 2) You can copy those packages into /home/$YOUR_MACHINE_NAME/mini6410/ .
 
