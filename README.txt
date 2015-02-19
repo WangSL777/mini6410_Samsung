@@ -30,8 +30,14 @@ How to install and build linux on local machine to make use of existing mini6410
     
     Now close the terminal and reopen it for reexecution of that .bashrc file. It's necessary.
     
-5) You got all extracted packages, Now build kernel 2.6.38 , enter into linux-2.6.38 directory.
-    cd /opt/FriendlyARM/mini6410/linux-2.6.38/
+5) You got all extracted packages, Now build kernel 2.6.38 , enter into linux-2.6.38 directory. Before build linux kernel you have to add .config file into linux-2.6.38 folder, for that first copy config.txt file into linux-2.6.38 folder then rename it as .config file, and then run make command.
+    
+	so first in terminal goto folder location where is downloaded config.txt file is located then run folowing commands.
+	
+	cp config.txt /opt/FriendlyARM/mini6410/linux-2.6.38/
+	cd /opt/FriendlyARM/mini6410/linux-2.6.38/
+	mv config.txt .config
+	apt-get install ncurses-dev
     make
     
     This command will build all necessary object files and kernel drivers. It will take approxomately 10 minutes for       execution process.
@@ -44,7 +50,6 @@ How to install and build linux on local machine to make use of existing mini6410
     By executing above command it will list all existing exmples like leds,pwm,buttons,i2c,adc-test,led-player etc.
     
 7) Now it's time to see existing char devices in our machine. First install necessary packages.
-    apt-get install ncurses-dev
     cd /opt/FriendlyARM/mini6410/linux-2.6.38/
     make menuconfig
     
